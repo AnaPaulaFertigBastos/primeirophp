@@ -16,10 +16,13 @@
         $intervalo = $date->diff(new DateTime( date('Y-m-d')));
         return $intervalo->format('%Y');
 
+        //http://localhost/idade.php?nome=aa&datanascto=09%2F05%2F2001
       }
       echo 'Olá '.$_GET['nome'];
       echo "<br>";
       echo "Você nasceu em: ".$_GET['datanascto'];
+      echo "<br><br>";
+      echo "diferença:".idade($_GET['datanascto']);
       echo "<br><br>";
       echo "<a href='index.php'>Voltar</a>"
     ?>
