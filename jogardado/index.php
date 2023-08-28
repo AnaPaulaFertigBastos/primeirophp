@@ -9,7 +9,7 @@
   <?php
 
     $sorteado = rand(1,6);
-    if ($sorteado==1) {
+    if ($sorteado<18.5) {
       $link = "https://static.thenounproject.com/png/399016-200.png";
     } else if ($sorteado==2) {
       $link = "https://static.thenounproject.com/png/399015-200.png";
